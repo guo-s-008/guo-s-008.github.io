@@ -1,0 +1,13 @@
+{
+  "name": "guo-s-008-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "4.13.2"
+  }
+}
