@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+  <title id="title">零售会员 RFM 用户分群与运营分析业务流程</title>
+  <desc id="desc">原始订单数据经过 Excel 清洗、MySQL 指标计算、RFM 分群、结果核对后，在 FineBI 中完成可视化和运营分析。</desc>
+  <rect width="1600" height="620" fill="#f7f9f7"/>
+  <text x="90" y="72" fill="#17231d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="700">零售会员 RFM 用户分群与运营分析</text>
+  <text x="90" y="112" fill="#637068" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">从订单明细到可执行的会员运营洞察</text>
+  <g font-family="Microsoft YaHei, Arial, sans-serif">
+    <g transform="translate(90 190)">
+      <rect width="270" height="190" rx="8" fill="#ffffff" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="24" y="42" fill="#39735b" font-size="16" font-weight="700">01</text>
+      <text x="24" y="86" fill="#17231d" font-size="24" font-weight="700">原始订单数据</text>
+      <text x="24" y="124" fill="#59675e" font-size="16">四个年度订单表</text>
+      <text x="24" y="152" fill="#59675e" font-size="16">会员等级与交易字段</text>
+    </g>
+    <g transform="translate(430 190)">
+      <rect width="270" height="190" rx="8" fill="#ffffff" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="24" y="42" fill="#39735b" font-size="16" font-weight="700">02</text>
+      <text x="24" y="86" fill="#17231d" font-size="24" font-weight="700">Excel 清洗</text>
+      <text x="24" y="124" fill="#59675e" font-size="16">检查字段、日期和金额</text>
+      <text x="24" y="152" fill="#59675e" font-size="16">保留有效订单记录</text>
+    </g>
+    <g transform="translate(770 190)">
+      <rect width="270" height="190" rx="8" fill="#ffffff" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="24" y="42" fill="#39735b" font-size="16" font-weight="700">03</text>
+      <text x="24" y="86" fill="#17231d" font-size="24" font-weight="700">MySQL 计算</text>
+      <text x="24" y="124" fill="#59675e" font-size="16">按年份和会员聚合</text>
+      <text x="24" y="152" fill="#59675e" font-size="16">生成 R、F、M 指标</text>
+    </g>
+    <g transform="translate(1110 190)">
+      <rect width="270" height="190" rx="8" fill="#315c49" stroke="#315c49" stroke-width="2"/>
+      <text x="24" y="42" fill="#d8eee1" font-size="16" font-weight="700">04</text>
+      <text x="24" y="86" fill="#ffffff" font-size="24" font-weight="700">RFM 用户分群</text>
+      <text x="24" y="124" fill="#e9f3ed" font-size="16">三档评分与分群编码</text>
+      <text x="24" y="152" fill="#e9f3ed" font-size="16">输出会员价值分层</text>
+    </g>
+    <g transform="translate(260 470)">
+      <rect width="300" height="92" rx="8" fill="#eef3ef" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="24" y="40" fill="#17231d" font-size="21" font-weight="700">SQL 与 Excel 核对</text>
+      <text x="24" y="69" fill="#59675e" font-size="15">年度指标、分群人数、金额</text>
+    </g>
+    <g transform="translate(650 470)">
+      <rect width="300" height="92" rx="8" fill="#eef3ef" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="24" y="40" fill="#17231d" font-size="21" font-weight="700">FineBI 可视化</text>
+      <text x="24" y="69" fill="#59675e" font-size="15">趋势、占比、排名与下钻</text>
+    </g>
+    <g transform="translate(1040 470)">
+      <rect width="300" height="92" rx="8" fill="#f2eee6" stroke="#cbbda9" stroke-width="2"/>
+      <text x="24" y="40" fill="#17231d" font-size="21" font-weight="700">运营分析建议</text>
+      <text x="24" y="69" fill="#59675e" font-size="15">维护、激活、召回、观察</text>
+    </g>
+  </g>
+  <g fill="none" stroke="#39735b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M360 285h70"/><path d="M700 285h70"/><path d="M1040 285h70"/>
+    <path d="M1245 380v55"/><path d="M1110 425H410"/>
+    <path d="M560 516h90"/><path d="M950 516h90"/>
+  </g>
+  <g fill="#39735b">
+    <path d="M420 285l-14-9v18z"/><path d="M760 285l-14-9v18z"/><path d="M1100 285l-14-9v18z"/>
+    <path d="M1245 440l-9-14h18z"/><path d="M650 516l-14-9v18z"/><path d="M1040 516l-14-9v18z"/>
+  </g>
+</svg>

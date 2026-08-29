@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+  <title id="title">客户调研与需求分析 AI 助手业务流程</title>
+  <desc id="desc">从原始会议文本到清洗脱敏、结构化提取、历史案例匹配、需求分析评级、飞书报告生成和需求池写入的七阶段流程。</desc>
+  <rect width="1600" height="620" fill="#F7F9F7"/>
+
+  <text x="96" y="88" fill="#17231D" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="36" font-weight="700">客户调研与需求分析 AI 助手</text>
+  <text x="96" y="130" fill="#647168" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18">将分散的客户反馈转化为可阅读、可追溯、可持续管理的结构化需求</text>
+
+  <line x1="181" y1="315" x2="1419" y2="315" stroke="#C9D4CC" stroke-width="4"/>
+
+  <g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+    <g transform="translate(80 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#315C49"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">1</text>
+      <rect x="57" y="48" width="76" height="58" rx="4" fill="#E9F1EC" stroke="#315C49" stroke-width="2"/>
+      <line x1="69" y1="66" x2="121" y2="66" stroke="#315C49" stroke-width="3"/>
+      <line x1="69" y1="79" x2="114" y2="79" stroke="#315C49" stroke-width="3"/>
+      <line x1="69" y1="92" x2="105" y2="92" stroke="#315C49" stroke-width="3"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">原始会议文本</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">会议纪要 · 访谈 · 工单</text>
+    </g>
+
+    <g transform="translate(285 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#377A72"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">2</text>
+      <path d="M62 58h66l-12 48H74z" fill="#E5F3F1" stroke="#377A72" stroke-width="2"/>
+      <path d="M75 54l7-12h26l7 12" fill="none" stroke="#377A72" stroke-width="3"/>
+      <path d="M83 68v27M96 68v27M109 68v27" stroke="#377A72" stroke-width="2"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">清洗与脱敏</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">去重 · 规范 · 敏感信息处理</text>
+    </g>
+
+    <g transform="translate(490 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#3C6F8B"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">3</text>
+      <rect x="55" y="45" width="80" height="62" rx="5" fill="#E8F0F4" stroke="#3C6F8B" stroke-width="2"/>
+      <circle cx="71" cy="63" r="5" fill="#3C6F8B"/>
+      <line x1="84" y1="63" x2="121" y2="63" stroke="#3C6F8B" stroke-width="3"/>
+      <circle cx="71" cy="78" r="5" fill="#3C6F8B"/>
+      <line x1="84" y1="78" x2="121" y2="78" stroke="#3C6F8B" stroke-width="3"/>
+      <circle cx="71" cy="93" r="5" fill="#3C6F8B"/>
+      <line x1="84" y1="93" x2="112" y2="93" stroke="#3C6F8B" stroke-width="3"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">结构化信息提取</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">摘要 · 决策 · 需求 · 行动</text>
+    </g>
+
+    <g transform="translate(695 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#59658C"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">4</text>
+      <circle cx="84" cy="72" r="27" fill="#EEF0F6" stroke="#59658C" stroke-width="3"/>
+      <line x1="104" y1="92" x2="128" y2="116" stroke="#59658C" stroke-width="6" stroke-linecap="round"/>
+      <path d="M71 72h26M84 59v26" stroke="#59658C" stroke-width="3"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">历史案例匹配</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">相同 · 相似 · 新需求</text>
+    </g>
+
+    <g transform="translate(900 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#8A6448"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">5</text>
+      <path d="M58 104h17V79H58zM86 104h17V63H86zM114 104h17V47H114z" fill="#F4ECE7" stroke="#8A6448" stroke-width="2"/>
+      <line x1="53" y1="108" x2="136" y2="108" stroke="#8A6448" stroke-width="3"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">需求分析与评级</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">类型 · 影响 · 紧急度 · 优先级</text>
+    </g>
+
+    <g transform="translate(1105 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#39735B"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">6</text>
+      <path d="M61 43h55l14 14v54H61z" fill="#E9F1EC" stroke="#39735B" stroke-width="2"/>
+      <path d="M116 43v16h14" fill="none" stroke="#39735B" stroke-width="2"/>
+      <line x1="74" y1="73" x2="116" y2="73" stroke="#39735B" stroke-width="3"/>
+      <line x1="74" y1="87" x2="116" y2="87" stroke="#39735B" stroke-width="3"/>
+      <line x1="74" y1="101" x2="104" y2="101" stroke="#39735B" stroke-width="3"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">生成飞书报告</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">结构化分析与复核说明</text>
+    </g>
+
+    <g transform="translate(1310 215)">
+      <rect width="190" height="200" rx="8" fill="#FFFFFF" stroke="#DCE4DE" stroke-width="2"/>
+      <circle cx="95" cy="0" r="27" fill="#8B7035"/>
+      <text x="95" y="8" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">7</text>
+      <ellipse cx="95" cy="51" rx="38" ry="13" fill="#F4F0E5" stroke="#8B7035" stroke-width="2"/>
+      <path d="M57 51v48c0 7 17 13 38 13s38-6 38-13V51" fill="#F4F0E5" stroke="#8B7035" stroke-width="2"/>
+      <path d="M57 74c0 7 17 13 38 13s38-6 38-13" fill="none" stroke="#8B7035" stroke-width="2"/>
+      <text x="95" y="140" fill="#17231D" font-size="20" font-weight="700" text-anchor="middle">写入需求池</text>
+      <text x="95" y="170" fill="#6B786F" font-size="14" text-anchor="middle">归档 · 筛选 · 跟踪 · 复核</text>
+    </g>
+  </g>
+
+  <g fill="#315C49">
+    <path d="M282 315l-12-8v16z"/>
+    <path d="M487 315l-12-8v16z"/>
+    <path d="M692 315l-12-8v16z"/>
+    <path d="M897 315l-12-8v16z"/>
+    <path d="M1102 315l-12-8v16z"/>
+    <path d="M1307 315l-12-8v16z"/>
+  </g>
+
+  <rect x="96" y="487" width="1408" height="68" rx="8" fill="#EEF3EF"/>
+  <text x="800" y="528" fill="#526159" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" text-anchor="middle">业务流程图用于帮助非技术读者理解处理链路；实际节点配置与分支逻辑见 Coze 完整工作流截图。</text>
+</svg>

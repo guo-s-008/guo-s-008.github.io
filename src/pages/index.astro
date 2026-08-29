@@ -4,11 +4,13 @@ const projects = [
     title: '客户调研与需求知识库 AI 助手',
     tag: 'Coze 工作流 · AI 产品运营',
     summary: '将会议纪要和客户反馈整理为结构化需求、历史案例与可归档报告。',
+    href: '/projects/customer-insight-ai/',
   },
   {
-    title: 'FineBI 数据分析实践',
+    title: '零售会员 RFM 用户分群与运营分析',
     tag: 'SQL · FineBI · 业务分析',
-    summary: '从数据清洗、口径核对到可视化看板，练习把数据转化为业务判断。',
+    summary: '用 Excel、MySQL 和 FineBI 完成会员价值分群、趋势分析与运营建议。',
+    href: '/projects/rfm-analysis/',
   },
 ];
 ---
@@ -31,7 +33,7 @@ const projects = [
       </section>
       <section id="projects" class="section">
         <div class="section-head"><p class="eyebrow">Selected work</p><h2>正在构建的作品</h2></div>
-        <div class="grid">{projects.map((project) => <article><p class="tag">{project.tag}</p><h3>{project.title}</h3><p>{project.summary}</p><a href="#about">了解项目 <span>→</span></a></article>)}</div>
+        <div class="grid">{projects.map((project) => <article><p class="tag">{project.tag}</p><h3>{project.title}</h3><p>{project.summary}</p><a href={project.href}>了解项目 <span>→</span></a></article>)}</div>
       </section>
       <section id="about" class="about section"><div><p class="eyebrow">About me</p><h2>从业务问题出发，学习把 AI 做成可用的流程。</h2></div><div><p>我目前就读于数据科学与大数据技术专业，掌握基础 SQL、FineBI 和业务分析方法，也在使用 Coze 搭建 AI 应用并记录测试与迭代过程。</p><p>求职方向：AI 产品运营、AI 应用实施、数据运营，也关注游戏 AI 产品场景。</p><a class="text-link" href="mailto:q17877881463qq@163.com">q17877881463qq@163.com →</a></div></section>
       <footer>© 2026 陈杰飞 · Built with Astro and GitHub Pages</footer>
