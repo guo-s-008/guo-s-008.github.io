@@ -1,0 +1,51 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const promptFiles = [
+  {
+    id: 'cleaning',
+    number: '01',
+    title: '文本清洗与脱敏 Prompt',
+    type: '前置预处理模板',
+    summary: '清理口语噪声、保护原意、脱敏敏感信息并保留来源元数据。',
+    filename: '01-cleaning-redaction.txt',
+  },
+  {
+    id: 'history',
+    number: '02',
+    title: '历史案例判断 Prompt',
+    type: '检索结果判断模板',
+    summary: '判断新需求与检索案例是 same、related 还是 new，并限制案例虚构。',
+    filename: '02-history-match.txt',
+  },
+  {
+    id: 'extraction',
+    number: '03',
+    title: '摘要、需求、决策与行动建议 Prompt',
+    type: '核心大模型分析模板',
+    summary: '定义事实、需求、讨论、决策、行动、未决问题和建议的完整边界。',
+    filename: '03-core-extraction.txt',
+  },
+].map((item) => ({
+  ...item,
+  content: fs.readFileSync(path.join(process.cwd(), 'public', 'projects', 'customer-insight-ai', 'prompts', '1.0', item.filename), 'utf8'),
+  download: `/projects/customer-insight-ai/prompts/1.0/${item.filename}`,
+}));
+---
+<html lang="zh-CN">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Prompt 库 1.0 | 客户调研与需求分析 AI 助手</title><meta name="description" content="客户调研与需求分析 AI 助手 1.0 版本 Prompt 库与逐句设计说明。" /></head>
+  <body><main>
+    <nav class="nav shell"><a class="brand" href="/">陈杰飞</a><div class="nav-links"><a href="/projects/customer-insight-ai/versions/1.0/">1.0 复盘</a><a href="/projects/customer-insight-ai/">项目详情</a></div></nav>
+    <header class="hero shell"><a class="back" href="/projects/customer-insight-ai/versions/1.0/">返回 1.0 复盘</a><p class="eyebrow">Prompt library · Version 1.0</p><h1>Prompt 库</h1><p class="lead">将工作流中的 Prompt 按节点职责拆分，并逐句说明定义、设计原因和实际作用。页面保留完整原文，也可下载文本文件。</p><div class="meta"><span><strong>版本</strong>1.0</span><span><strong>模板数量</strong>3</span><span><strong>覆盖节点</strong>预处理 · 检索 · 核心提取</span><span><strong>记录方式</strong>原文 + 逐句分析</span></div></header>
+
+    <section class="band muted"><div class="shell"><div class="section-heading"><p class="eyebrow">Templates</p><h2>选择模板</h2></div><div class="prompt-list">{promptFiles.map((item) => <a href={`#${item.id}`}><span>{item.number}</span><div><p>{item.type}</p><h3>{item.title}</h3><small>{item.summary}</small></div><b>↓</b></a>)}</div></div></section>
+
+    {promptFiles.map((item, index) => <section id={item.id} class:list={['prompt-section', index % 2 === 1 && 'muted']}><div class="shell"><div class="prompt-heading"><div><p class="eyebrow">Prompt {item.number} · {item.type}</p><h2>{item.title}</h2><p>{item.summary}</p></div><a href={item.download} download>下载原始 TXT</a></div><details open={index === 0}><summary>查看完整 Prompt 与逐句分析</summary><pre>{item.content}</pre></details></div></section>)}
+
+    <footer class="footer shell"><span>© 2026 陈杰飞</span><a href="/projects/customer-insight-ai/versions/1.0/">返回 1.0 复盘</a></footer>
+  </main></body>
+</html>
+<style>
+  :global(*){box-sizing:border-box}:global(html){scroll-behavior:smooth}:global(body){margin:0;background:#f7f9f7;color:#17231d;font-family:Inter,"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}:global(a){color:inherit}.shell{width:min(1160px,calc(100% - 64px));margin:0 auto}.nav{height:76px;display:flex;align-items:center;border-bottom:1px solid #d9e1da}.brand{margin-right:auto;text-decoration:none;font-weight:760}.nav-links{display:flex;gap:28px}.nav-links a{color:#526159;text-decoration:none;font-size:14px}.hero{padding:68px 0 88px}.back{display:inline-block;margin-bottom:58px;color:#526159;font-size:14px;text-decoration:none}.eyebrow{margin:0 0 16px;color:#39735b;text-transform:uppercase;font-size:11px;font-weight:760}h1{margin:0;font-size:clamp(48px,7vw,82px);line-height:1.06}.lead{max-width:790px;margin:30px 0 0;color:#5d6b63;font-size:19px;line-height:1.75}.meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:54px;border-top:1px solid #d9e1da;border-bottom:1px solid #d9e1da}.meta span{padding:20px 20px 20px 0;color:#526159;font-size:14px}.meta strong{display:block;margin-bottom:7px;color:#17231d;font-size:12px}.band,.prompt-section{padding:92px 0;border-top:1px solid #d9e1da}.muted{background:#eef3ef}.section-heading{margin-bottom:36px}.section-heading h2,.prompt-heading h2{margin:0;font-size:39px;line-height:1.22}.prompt-list{border-top:1px solid #cfd9d1}.prompt-list>a{display:grid;grid-template-columns:60px 1fr 24px;gap:20px;align-items:center;padding:26px 0;border-bottom:1px solid #cfd9d1;text-decoration:none}.prompt-list>a>span{color:#39735b;font-size:12px;font-weight:760}.prompt-list p{margin:0 0 6px;color:#768279;font-size:12px}.prompt-list h3{margin:0 0 7px;font-size:21px}.prompt-list small{color:#59675e;font-size:14px;line-height:1.6}.prompt-list b{color:#39735b}.prompt-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:32px}.prompt-heading>div>p:last-child{max-width:760px;margin:16px 0 0;color:#59675e;line-height:1.7}.prompt-heading>a{flex:0 0 auto;padding:11px 16px;border:1px solid #b9c9bd;color:#315c49;text-decoration:none;font-size:13px;font-weight:700}details{border:1px solid #d8e1da;background:#fff}summary{padding:18px 20px;color:#315c49;cursor:pointer;font-weight:700}pre{overflow:auto;max-height:760px;margin:0;padding:28px;border-top:1px solid #d8e1da;background:#fbfcfb;color:#334139;font-family:"Microsoft YaHei",system-ui,sans-serif;font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}.footer{display:flex;justify-content:space-between;padding:32px 0 44px;border-top:1px solid #d9e1da;color:#768279;font-size:13px}.footer a{color:#315c49;text-decoration:none;font-weight:700}@media(max-width:800px){.shell{width:min(100% - 40px,1160px)}.hero{padding:46px 0 68px}.back{margin-bottom:38px}h1{font-size:48px}.meta{grid-template-columns:1fr 1fr}.band,.prompt-section{padding:68px 0}.section-heading h2,.prompt-heading h2{font-size:33px}}@media(max-width:520px){.nav-links{gap:16px}h1{font-size:40px}.meta{grid-template-columns:1fr}.meta span{border-bottom:1px solid #e1e7e2}.prompt-list>a{grid-template-columns:34px 1fr 16px;gap:10px}.prompt-heading{align-items:flex-start;flex-direction:column}.prompt-heading>a{width:100%;text-align:center}pre{max-height:620px;padding:20px;font-size:13px}.footer{flex-direction:column;gap:14px}}
+</style>
