@@ -68,6 +68,7 @@ const metrics = [
         <div class="actions">
           <a class="button primary" href="#process">查看业务流程</a>
           <a class="button" href="/projects/customer-insight-ai/ab-test-results.xlsx" download>下载测试记录</a>
+          <a class="button version-button" href="/projects/customer-insight-ai/versions/"><span>NEW</span>版本复盘</a>
         </div>
         <p class="data-note">页面展示内容均为模拟测试数据，不代表真实企业或客户。</p>
       </header>
@@ -241,6 +242,8 @@ const metrics = [
   .actions, .download-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
   .button { display: inline-block; padding: 12px 18px; border: 1px solid #b9c9bd; color: #315c49; text-decoration: none; font-size: 14px; }
   .button.primary { background: #315c49; border-color: #315c49; color: #fff; }
+  .version-button { display: inline-flex; align-items: center; gap: 8px; border-color: #8a6448; color: #6f4d36; }
+  .version-button span { padding: 2px 5px; background: #8a6448; color: #fff; font-size: 9px; font-weight: 760; }
   .data-note { margin: 22px 0 0; color: #768279; font-size: 12px; }
   .band { padding: 92px 0; border-top: 1px solid #d9e1da; }
   .band.muted { background: #eef3ef; }

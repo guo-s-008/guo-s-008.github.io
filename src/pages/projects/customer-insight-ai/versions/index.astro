@@ -1,0 +1,24 @@
+---
+const versions = [
+  {
+    version: '1.0',
+    date: '2026.08',
+    status: '已发布',
+    title: '20 份用例复盘与来源归因问题',
+    summary: '重新校准评估口径，并发现客户诉求、内部问题和讨论建议缺少来源分类的结构性问题。',
+    href: '/projects/customer-insight-ai/versions/1.0/',
+  },
+];
+---
+<html lang="zh-CN">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>版本复盘 | 客户调研与需求分析 AI 助手</title><meta name="description" content="客户调研与需求分析 AI 助手的版本复盘记录。" /></head>
+  <body><main>
+    <nav class="nav shell"><a class="brand" href="/">陈杰飞</a><div class="nav-links"><a href="/projects/customer-insight-ai/">项目详情</a><a href="/#about">关于我</a></div></nav>
+    <header class="hero shell"><a class="back" href="/projects/customer-insight-ai/">返回项目页</a><p class="eyebrow">Version review</p><h1>版本复盘</h1><p class="lead">记录每次测试中发现的问题、判断依据和后续改造方向。这里保留过程，而不仅展示最终结果。</p></header>
+    <section class="band muted"><div class="shell"><div class="section-heading"><p class="eyebrow">Versions</p><h2>选择版本</h2></div><div class="version-list">{versions.map((item) => <a class="version-item" href={item.href}><div class="version-code"><span>V</span><strong>{item.version}</strong></div><div><div class="version-meta"><span>{item.date}</span><span>{item.status}</span></div><h3>{item.title}</h3><p>{item.summary}</p></div><span class="arrow">→</span></a>)}</div></div></section>
+    <footer class="footer shell"><span>© 2026 陈杰飞</span><a href="/projects/customer-insight-ai/">返回项目详情</a></footer>
+  </main></body>
+</html>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#f7f9f7;color:#17231d;font-family:Inter,"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}:global(a){color:inherit}.shell{width:min(1160px,calc(100% - 64px));margin:0 auto}.nav{height:76px;display:flex;align-items:center;border-bottom:1px solid #d9e1da}.brand{margin-right:auto;text-decoration:none;font-weight:760}.nav-links{display:flex;gap:28px}.nav-links a{color:#526159;text-decoration:none;font-size:14px}.hero{padding:68px 0 88px}.back{display:inline-block;margin-bottom:58px;color:#526159;font-size:14px;text-decoration:none}.eyebrow{margin:0 0 16px;color:#39735b;text-transform:uppercase;font-size:11px;font-weight:760}h1{margin:0;font-size:clamp(48px,7vw,82px);line-height:1.06}.lead{max-width:720px;margin:30px 0 0;color:#5d6b63;font-size:19px;line-height:1.75}.band{padding:92px 0;border-top:1px solid #d9e1da}.muted{background:#eef3ef}.section-heading{margin-bottom:34px}.section-heading h2{margin:0;font-size:39px}.version-list{border-top:1px solid #cfd9d1}.version-item{display:grid;grid-template-columns:110px 1fr 32px;gap:28px;align-items:center;padding:30px 0;border-bottom:1px solid #cfd9d1;text-decoration:none}.version-item:hover h3{color:#315c49}.version-code{display:flex;align-items:baseline;gap:6px;color:#315c49}.version-code span{font-size:12px;font-weight:760}.version-code strong{font-size:34px}.version-meta{display:flex;gap:14px;color:#768279;font-size:12px}.version-meta span:last-child{color:#39735b}.version-item h3{margin:9px 0 8px;font-size:22px}.version-item p{margin:0;max-width:740px;color:#59675e;line-height:1.7}.arrow{color:#39735b;font-size:22px}.footer{display:flex;justify-content:space-between;padding:32px 0 44px;border-top:1px solid #d9e1da;color:#768279;font-size:13px}.footer a{color:#315c49;text-decoration:none;font-weight:700}@media(max-width:680px){.shell{width:min(100% - 40px,1160px)}.hero{padding:46px 0 68px}.back{margin-bottom:38px}h1{font-size:48px}.band{padding:68px 0}.version-item{grid-template-columns:72px 1fr 18px;gap:14px}.version-code strong{font-size:28px}.version-item h3{font-size:19px}.footer{flex-direction:column;gap:14px}}
+</style>
