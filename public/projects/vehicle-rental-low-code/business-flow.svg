@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">车辆租赁管理系统简化业务流程</title>
+  <desc id="desc">从基础资料维护到租赁单查询维护的业务流程，区分制单岗、收费岗和信息管理岗</desc>
+  <rect width="1400" height="560" fill="#ffffff"/>
+  <g font-family="Arial,Microsoft YaHei,sans-serif" fill="#17231d">
+    <text x="70" y="62" font-size="28" font-weight="700">车辆租赁管理系统 · 简化业务流程</text>
+    <text x="70" y="94" font-size="15" fill="#637068">根据北京久其软件低代码平台实训过程整理，展示业务对象、规则和岗位流转关系</text>
+    <g font-size="14" font-weight="700">
+      <rect x="70" y="135" width="1260" height="64" rx="3" fill="#eef3ef" stroke="#b9c9bd"/>
+      <text x="95" y="162" fill="#39735b">基础资料</text>
+      <text x="95" y="184" font-size="13" font-weight="400" fill="#59675e">客户 · 客户经理 · 车辆分类 · 车辆 · 费用类别</text>
+    </g>
+    <g stroke="#39735b" stroke-width="3" fill="none">
+      <path d="M700 199v38"/>
+      <path d="M700 309v38"/>
+      <path d="M700 419v38"/>
+    </g>
+    <g fill="#39735b">
+      <path d="m693 232 7 12 7-12z"/><path d="m693 342 7 12 7-12z"/><path d="m693 452 7 12 7-12z"/>
+    </g>
+    <g>
+      <rect x="70" y="245" width="1260" height="64" rx="3" fill="#ffffff" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="95" y="272" font-size="14" font-weight="700" fill="#39735b">制单岗</text>
+      <text x="95" y="294" font-size="13" fill="#59675e">创建租赁单 → 选择客户和车辆 → 自动带出信息 → 填写租赁周期与费用</text>
+      <text x="1050" y="282" font-size="13" fill="#8a6448">日期校验 · 车辆过滤 · 费用汇总</text>
+    </g>
+    <g>
+      <rect x="70" y="355" width="1260" height="64" rx="3" fill="#f1ebe5" stroke="#c9ad95" stroke-width="2"/>
+      <text x="95" y="382" font-size="14" font-weight="700" fill="#8a6448">收费岗</text>
+      <text x="95" y="404" font-size="13" fill="#59675e">接收提交 → 核对费用 → 审批通过或驳回</text>
+      <text x="1050" y="392" font-size="13" fill="#8a6448">驳回需重新填写租赁单</text>
+    </g>
+    <g>
+      <rect x="70" y="465" width="1260" height="64" rx="3" fill="#eef3ef" stroke="#b9c9bd" stroke-width="2"/>
+      <text x="95" y="492" font-size="14" font-weight="700" fill="#39735b">信息管理岗</text>
+      <text x="95" y="514" font-size="13" fill="#59675e">查询全部提交记录 → 查看表单信息与审批状态 → 维护业务资料</text>
+    </g>
+    <g font-size="12" fill="#637068">
+      <text x="70" y="550">岗位账号相互分离，权限互不干扰；本图为实训过程复原，不代表真实企业生产系统架构。</text>
+    </g>
+  </g>
+</svg>
