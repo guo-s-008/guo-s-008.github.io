@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 520" role="img" aria-labelledby="title desc">
+  <title id="title">银途 AI 就业陪伴用户主流程</title>
+  <desc id="desc">从经历采集到面试陪练的七步用户流程</desc>
+  <rect width="1500" height="520" fill="#ffffff"/>
+  <g font-family="Arial,Microsoft YaHei,sans-serif" fill="#17231d" text-anchor="middle">
+    <text x="70" y="62" text-anchor="start" font-size="28" font-weight="700">银途 AI 就业陪伴 · 用户主流程</text>
+    <text x="70" y="94" text-anchor="start" font-size="15" fill="#637068">从“说不清经历”到“看懂岗位并完成面试练习”的移动优先体验</text>
+    <g fill="#eef3ef" stroke="#b9c9bd" stroke-width="2">
+      <rect x="55" y="175" width="175" height="100" rx="4"/><rect x="260" y="175" width="175" height="100" rx="4"/><rect x="465" y="175" width="175" height="100" rx="4"/><rect x="670" y="175" width="175" height="100" rx="4"/><rect x="875" y="175" width="175" height="100" rx="4"/><rect x="1080" y="175" width="175" height="100" rx="4"/><rect x="1285" y="175" width="160" height="100" rx="4"/>
+    </g>
+    <g font-size="18" font-weight="700"><text x="142" y="217">经历采集</text><text x="347" y="217">能力卡</text><text x="552" y="217">本人确认</text><text x="757" y="217">岗位匹配</text><text x="962" y="217">风险判断</text><text x="1167" y="217">申请</text><text x="1365" y="217">面试陪练</text></g>
+    <g font-size="13" fill="#59675e"><text x="142" y="246">语音 / 文字</text><text x="347" y="246">AI 结构化草稿</text><text x="552" y="246">版本与审计记录</text><text x="757" y="246">语义相似度排序</text><text x="962" y="246">等级与原因</text><text x="1167" y="246">低风险 / 确认中风险</text><text x="1365" y="246">逐题反馈与总结</text></g>
+    <g stroke="#39735b" stroke-width="3" fill="none"><path d="M230 225h30m175 0h30m175 0h30m175 0h30m175 0h30m175 0h30"/></g>
+    <g fill="#39735b"><path d="m252 218 12 7-12 7z"/><path d="m457 218 12 7-12 7z"/><path d="m662 218 12 7-12 7z"/><path d="m867 218 12 7-12 7z"/><path d="m1072 218 12 7-12 7z"/><path d="m1277 218 12 7-12 7z"/></g>
+    <path d="M962 275v90H552v-90" fill="none" stroke="#8a6448" stroke-width="2" stroke-dasharray="8 7"/><text x="757" y="398" font-size="14" fill="#8a6448">中风险：用户确认后进入安全复核；高风险 / 拦截岗位不能直接申请</text>
+    <text x="750" y="470" font-size="16" fill="#39735b" font-weight="700">能力卡是草稿，用户确认后才进入正式匹配和申请流程</text>
+  </g>
+</svg>
