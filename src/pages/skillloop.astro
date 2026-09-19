@@ -1,0 +1,119 @@
+---
+const decisions = [
+  ['先交换，再社区', '首版围绕发布、匹配、申请、完成和评价形成闭环，不用动态广场分散注意力。'],
+  ['匹配理由可解释', '不仅匹配技能名称，还展示双方时间、目标和交换条件为什么合拍。'],
+  ['首次只约 30 分钟', '把一次长期承诺拆成低压力短体验，降低拒绝、试错和爽约成本。'],
+  ['不急于搭积分经济', 'MVP 先验证直接互换，技能时与付费补差留到履约模型稳定以后。'],
+];
+
+const risks = [
+  ['供需密度不足', '从高校青年或兴趣社群切入，先聚焦编程、摄影、乐器和语言等高频技能。'],
+  ['技能质量不稳定', '明确“能帮助对方完成什么”，结合作品证明、短体验与结构化评价。'],
+  ['爽约与时间损失', '展示历史完成率，设置日程提醒、取消规则和频繁爽约限制。'],
+  ['线下交流安全', '隐藏联系方式，推荐公共场所，提供实名认证标识、举报和拉黑入口。'],
+];
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SkillLoop 技能互换平台 | 陈杰飞</title>
+    <meta name="description" content="SkillLoop 技能互换平台产品设计与可交互前端雏形。" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav shell">
+        <a class="brand" href="/">陈杰飞</a>
+        <div class="nav-links"><a href="/#projects">项目</a><a href="/#about">关于我</a></div>
+      </nav>
+
+      <header class="hero shell">
+        <a class="back" href="/">返回作品集</a>
+        <p class="eyebrow">AI Coding · C 端产品设计 · 交互原型</p>
+        <h1>SkillLoop<br /><em>技能互换平台</em></h1>
+        <p class="lead">让用户用自己会的，换到自己想学的。产品不止帮助双方“找到彼此”，还通过短体验、交换契约和履约评价，让一次真实交换顺利完成。</p>
+        <div class="meta">
+          <span><strong>项目目标</strong>降低技能学习与分享门槛</span>
+          <span><strong>核心用户</strong>探索型学习者 · 技能分享者</span>
+          <span><strong>交付内容</strong>产品方案 · 响应式交互原型</span>
+          <span><strong>当前阶段</strong>静态 MVP 概念验证</span>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="#prototype">体验在线原型</a>
+          <a class="button" href="/projects/skillloop/skillloop-product-plan.md" download>下载方案文档</a>
+        </div>
+        <p class="boundary">边界说明：当前版本使用模拟用户与匹配数据，用于验证产品结构、页面理解度和核心交互，不代表真实交易或教学结果。</p>
+      </header>
+
+      <section class="band muted">
+        <div class="shell two-col">
+          <div class="section-heading"><p class="eyebrow">Problem</p><h2>用户缺的不是更多教程，而是反馈、陪伴与行动</h2></div>
+          <div class="body-copy">
+            <p>培训班价格高，自学资料虽然丰富，却很难获得及时反馈并长期坚持。与此同时，普通人掌握的摄影、办公软件、外语或乐器等技能，也缺少低门槛的分享渠道。</p>
+            <p>真正需要解决的是：如何快速找到合适的人、如何放心开始第一次沟通，以及如何把一次聊天转化为一次真正完成的学习。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="shell">
+          <div class="section-heading narrow"><p class="eyebrow">Product decisions</p><h2>围绕“让一次交换真的发生”做取舍</h2></div>
+          <div class="decision-grid">
+            {decisions.map(([title, copy], index) => <article><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section class="band dark">
+        <div class="shell">
+          <div class="section-heading narrow"><p class="eyebrow">Core flow</p><h2>从双向技能档案到完成互评</h2></div>
+          <ol class="flow-list">
+            <li><strong>发布</strong><span>我能教什么，我想学什么</span></li>
+            <li><strong>匹配</strong><span>技能、时间、目标与信用综合推荐</span></li>
+            <li><strong>申请</strong><span>确认交换内容与首次体验目标</span></li>
+            <li><strong>履约</strong><span>线上交流或公共场所见面</span></li>
+            <li><strong>互评</strong><span>记录完成率、收获与下一步</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="prototype" class="band prototype-band">
+        <div class="shell">
+          <div class="prototype-head">
+            <div class="section-heading narrow"><p class="eyebrow">Live prototype</p><h2>可操作的前端雏形</h2><p>可尝试技能搜索、分类筛选、收藏、发布技能与发起交换。页面针对桌面和手机进行了响应式适配。</p></div>
+            <a class="button primary" href="/projects/skillloop/demo/" target="_blank" rel="noreferrer">在新窗口打开</a>
+          </div>
+          <div class="browser-frame">
+            <div class="browser-bar"><i></i><i></i><i></i><span>guo-s-008.github.io/projects/skillloop/demo/</span></div>
+            <iframe src="/projects/skillloop/demo/" title="SkillLoop 可交互前端原型" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="band muted">
+        <div class="shell">
+          <div class="section-heading narrow"><p class="eyebrow">Risk review</p><h2>产品风险与应对</h2></div>
+          <div class="risk-list">
+            {risks.map(([title, copy]) => <article><h3>{title}</h3><p>{copy}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section class="band conclusion">
+        <div class="shell two-col">
+          <div class="section-heading"><p class="eyebrow">Evaluation</p><h2>最终判断</h2></div>
+          <div class="body-copy"><p>技能互换的机会真实存在，但成败不取决于功能数量，而取决于局部供需密度和履约信任。合理路径是先从特定人群与少数高频技能切入，验证真实交换，再扩展技能时、付费补差与社区关系。</p><a class="text-link" href="/projects/skillloop/skillloop-product-plan.md" download>下载完整产品方案 →</a></div>
+        </div>
+      </section>
+
+      <footer class="footer shell"><span>© 2026 陈杰飞</span><a href="/">返回作品集</a></footer>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#f7f9f7;color:#17231d;font-family:Inter,"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;letter-spacing:0}:global(a){color:inherit}.shell{width:min(1160px,calc(100% - 64px));margin:0 auto}.nav{height:76px;display:flex;align-items:center;border-bottom:1px solid #d9e1da}.brand{margin-right:auto;text-decoration:none;font-weight:760}.nav-links{display:flex;gap:28px}.nav-links a{color:#526159;text-decoration:none;font-size:14px}.hero{padding:68px 0 88px}.back{display:inline-block;margin-bottom:58px;color:#526159;text-decoration:none;font-size:14px}.eyebrow{margin:0 0 16px;color:#39735b;text-transform:uppercase;font-size:11px;font-weight:760}h1{margin:0;font-size:clamp(52px,8vw,90px);line-height:1.02}h1 em{color:#39735b;font-style:normal}.lead{max-width:820px;margin:30px 0 0;color:#5d6b63;font-size:19px;line-height:1.75}.meta{display:grid;grid-template-columns:repeat(4,1fr);margin-top:54px;border-top:1px solid #d9e1da;border-bottom:1px solid #d9e1da}.meta span{padding:20px 20px 20px 0;color:#526159;font-size:14px}.meta strong{display:block;margin-bottom:7px;color:#17231d;font-size:12px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:0 18px;border:1px solid #b9c9bd;color:#315c49;text-decoration:none;font-size:14px;font-weight:700}.button.primary{background:#315c49;border-color:#315c49;color:#fff}.boundary{margin:22px 0 0;color:#8a6448;font-size:12px;line-height:1.6}.band{padding:92px 0;border-top:1px solid #d9e1da}.band.muted{background:#eef3ef}.two-col{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.35fr);gap:90px}.section-heading h2{margin:0;font-size:39px;line-height:1.22}.section-heading.narrow{max-width:800px;margin-bottom:40px}.section-heading>p:last-child{color:#637068;font-size:16px;line-height:1.75}.body-copy p{color:#4f5e55;line-height:1.85}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.decision-grid article{position:relative;min-height:210px;padding:28px;border:1px solid #dbe3dd;background:#fff}.decision-grid article>span{position:absolute;top:24px;right:24px;color:#a1aea6;font-size:12px}.decision-grid h3,.risk-list h3{margin:35px 0 12px;font-size:21px}.decision-grid p,.risk-list p{margin:0;color:#5d6b63;font-size:14px;line-height:1.75}.dark{color:#f5f8f6;background:#18241e}.dark .eyebrow{color:#82b79e}.dark h2{color:#fff}.flow-list{display:grid;grid-template-columns:repeat(5,1fr);margin:50px 0 0;padding:0;list-style:none;border-top:1px solid #405048;border-bottom:1px solid #405048}.flow-list li{min-height:150px;padding:26px 20px;border-right:1px solid #405048}.flow-list li:last-child{border-right:0}.flow-list strong{display:block;margin-bottom:22px;color:#fff;font-size:20px}.flow-list span{color:#aebbb4;font-size:13px;line-height:1.7}.prototype-band{background:#fff}.prototype-head{display:flex;align-items:end;justify-content:space-between;gap:30px}.browser-frame{overflow:hidden;border:1px solid #cdd8d1;background:#fff;box-shadow:0 24px 60px rgba(23,35,29,.12)}.browser-bar{height:45px;display:flex;align-items:center;gap:7px;padding:0 15px;background:#e9eeeb;border-bottom:1px solid #cdd8d1}.browser-bar i{width:10px;height:10px;border-radius:50%;background:#99a69f}.browser-bar i:first-child{background:#ef6a4b}.browser-bar span{margin-left:10px;color:#66736b;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.browser-frame iframe{display:block;width:100%;height:720px;border:0}.risk-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #cfd9d2}.risk-list article{padding:24px 28px 28px 0;border-bottom:1px solid #cfd9d2}.risk-list article:nth-child(odd){padding-right:50px;border-right:1px solid #cfd9d2}.risk-list article:nth-child(even){padding-left:50px}.risk-list h3{margin:0 0 10px}.text-link{display:inline-block;margin-top:14px;color:#39735b;text-decoration:none;font-weight:700;font-size:14px}.footer{display:flex;justify-content:space-between;padding:32px 0 44px;border-top:1px solid #d9e1da;color:#768279;font-size:13px}.footer a{color:#315c49;text-decoration:none;font-weight:700}
+  @media(max-width:800px){.shell{width:min(100% - 40px,1160px)}.hero{padding:46px 0 68px}.back{margin-bottom:38px}h1{font-size:54px}.lead{font-size:17px}.meta{grid-template-columns:1fr 1fr}.two-col,.decision-grid{grid-template-columns:1fr;gap:28px}.band{padding:68px 0}.section-heading h2{font-size:33px}.flow-list{grid-template-columns:1fr 1fr}.flow-list li{border-bottom:1px solid #405048}.prototype-head{display:block}.prototype-head>.button{margin:0 0 24px}.browser-frame iframe{height:620px}.risk-list{grid-template-columns:1fr}.risk-list article:nth-child(n){padding:22px 0;border-right:0}}
+  @media(max-width:520px){.nav-links{gap:18px}h1{font-size:44px}.meta{grid-template-columns:1fr}.flow-list{grid-template-columns:1fr}.flow-list li{min-height:120px;border-right:0}.browser-frame iframe{height:680px}.footer{flex-direction:column;gap:14px}}
+</style>
