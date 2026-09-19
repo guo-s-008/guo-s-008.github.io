@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillLoop 技能环，让每个人用自己会的，换到自己想学的。">
+  <title>SkillLoop 技能环</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SkillLoop 首页">
+      <span class="brand-mark">S</span>
+      <span>SkillLoop <b>技能环</b></span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#matches">发现技能</a>
+      <a href="#how">交换流程</a>
+      <a href="#trust">安全保障</a>
+    </nav>
+    <button class="button button-dark header-action" data-open-publish>
+      <i data-lucide="plus" aria-hidden="true"></i>
+      发布技能
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> 同城或线上，找到你的技能搭子</p>
+        <h1>SkillLoop 技能环</h1>
+        <p class="hero-lead">用你会的，换到你想学的。</p>
+        <div class="hero-search" role="search">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input id="heroSearch" type="search" placeholder="想学什么？试试 Python、摄影、吉他" aria-label="搜索想学的技能">
+          <button id="searchButton" class="button button-coral">找搭子</button>
+        </div>
+        <div class="hero-meta">
+          <span><i data-lucide="shield-check"></i> 真实评价</span>
+          <span><i data-lucide="clock-3"></i> 首次 30 分钟体验</span>
+          <span><i data-lucide="repeat-2"></i> 技能公平互换</span>
+        </div>
+      </div>
+      <a class="hero-next" href="#matches" aria-label="查看推荐匹配">
+        <span>今日推荐</span>
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <section class="match-section" id="matches">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">为你匹配</p>
+          <h2>不只是技能对上，时间也要合拍</h2>
+        </div>
+        <button class="text-button" id="refreshMatches">
+          <i data-lucide="refresh-cw"></i>
+          换一批
+        </button>
+      </div>
+
+      <div class="filters" aria-label="技能分类">
+        <button class="filter active" data-category="全部">全部</button>
+        <button class="filter" data-category="编程">编程</button>
+        <button class="filter" data-category="摄影">摄影</button>
+        <button class="filter" data-category="乐器">乐器</button>
+        <button class="filter" data-category="语言">语言</button>
+        <button class="filter" data-category="运动">运动</button>
+        <button class="filter" data-category="设计">设计</button>
+      </div>
+
+      <div class="match-grid" id="matchGrid">
+        <article class="match-card" data-category="摄影" data-keywords="摄影 构图 修图 Python Excel 林夏">
+          <div class="person-row">
+            <div class="avatar avatar-green">林</div>
+            <div>
+              <h3>林夏 <span class="verified"><i data-lucide="badge-check"></i></span></h3>
+              <p>上海 · 周末可约 · 已完成 12 次</p>
+            </div>
+            <button class="icon-button save-button" aria-label="收藏林夏" title="收藏"><i data-lucide="bookmark"></i></button>
+          </div>
+          <div class="exchange-line">
+            <div><small>TA 能教你</small><strong>人像摄影与构图</strong></div>
+            <i data-lucide="arrow-left-right"></i>
+            <div><small>TA 想学</small><strong>Python 数据处理</strong></div>
+          </div>
+          <p class="match-reason"><i data-lucide="sparkles"></i> 你们周末都有空，目标和经验刚好互补</p>
+          <div class="card-footer">
+            <div class="rating"><i data-lucide="star"></i> 4.9 <span>“讲解耐心，示例很实用”</span></div>
+            <button class="button button-outline swap-button" data-name="林夏" data-skill="人像摄影与构图">发起交换</button>
+          </div>
+        </article>
+
+        <article class="match-card" data-category="编程" data-keywords="Python 编程 自动化 吉他 周扬">
+          <div class="person-row">
+            <div class="avatar avatar-coral">周</div>
+            <div>
+              <h3>周扬 <span class="verified"><i data-lucide="badge-check"></i></span></h3>
+              <p>线上 · 工作日晚间 · 已完成 8 次</p>
+            </div>
+            <button class="icon-button save-button" aria-label="收藏周扬" title="收藏"><i data-lucide="bookmark"></i></button>
+          </div>
+          <div class="exchange-line">
+            <div><small>TA 能教你</small><strong>Python 办公自动化</strong></div>
+            <i data-lucide="arrow-left-right"></i>
+            <div><small>TA 想学</small><strong>吉他弹唱入门</strong></div>
+          </div>
+          <p class="match-reason"><i data-lucide="sparkles"></i> TA 的教学范围与你的入门目标高度一致</p>
+          <div class="card-footer">
+            <div class="rating"><i data-lucide="star"></i> 4.8 <span>“半小时跑通第一个脚本”</span></div>
+            <button class="button button-outline swap-button" data-name="周扬" data-skill="Python 办公自动化">发起交换</button>
+          </div>
+        </article>
+
+        <article class="match-card" data-category="语言" data-keywords="英语 口语 面试 PPT 设计 沈知安">
+          <div class="person-row">
+            <div class="avatar avatar-blue">沈</div>
+            <div>
+              <h3>沈知安 <span class="verified"><i data-lucide="badge-check"></i></span></h3>
+              <p>杭州 · 周三晚可约 · 已完成 21 次</p>
+            </div>
+            <button class="icon-button save-button" aria-label="收藏沈知安" title="收藏"><i data-lucide="bookmark"></i></button>
+          </div>
+          <div class="exchange-line">
+            <div><small>TA 能教你</small><strong>英语面试口语</strong></div>
+            <i data-lucide="arrow-left-right"></i>
+            <div><small>TA 想学</small><strong>PPT 视觉设计</strong></div>
+          </div>
+          <p class="match-reason"><i data-lucide="sparkles"></i> 你们都希望在两周内完成一个明确目标</p>
+          <div class="card-footer">
+            <div class="rating"><i data-lucide="star"></i> 5.0 <span>“会针对真实面试纠音”</span></div>
+            <button class="button button-outline swap-button" data-name="沈知安" data-skill="英语面试口语">发起交换</button>
+          </div>
+        </article>
+
+        <article class="match-card" data-category="乐器" data-keywords="吉他 乐理 摄影 陈默">
+          <div class="person-row">
+            <div class="avatar avatar-yellow">陈</div>
+            <div>
+              <h3>陈默 <span class="verified"><i data-lucide="badge-check"></i></span></h3>
+              <p>北京 · 周日下午 · 已完成 16 次</p>
+            </div>
+            <button class="icon-button save-button" aria-label="收藏陈默" title="收藏"><i data-lucide="bookmark"></i></button>
+          </div>
+          <div class="exchange-line">
+            <div><small>TA 能教你</small><strong>零基础吉他弹唱</strong></div>
+            <i data-lucide="arrow-left-right"></i>
+            <div><small>TA 想学</small><strong>街头摄影</strong></div>
+          </div>
+          <p class="match-reason"><i data-lucide="sparkles"></i> 同城且相距 3.2 km，可以线下短体验</p>
+          <div class="card-footer">
+            <div class="rating"><i data-lucide="star"></i> 4.9 <span>“节奏清楚，没有压力”</span></div>
+            <button class="button button-outline swap-button" data-name="陈默" data-skill="零基础吉他弹唱">发起交换</button>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>暂时没有完全匹配的技能，换个关键词试试。</p>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-head compact">
+        <div>
+          <p class="section-kicker">简单开始</p>
+          <h2>四步完成一次技能交换</h2>
+        </div>
+        <p>第一次不用承诺长期课程，先用 30 分钟确认彼此是否合拍。</p>
+      </div>
+      <ol class="steps">
+        <li><span>01</span><i data-lucide="square-pen"></i><h3>发布技能</h3><p>说清你能帮别人完成什么，以及自己想学什么。</p></li>
+        <li><span>02</span><i data-lucide="scan-search"></i><h3>找到搭子</h3><p>按技能、时间和方式匹配，推荐理由一目了然。</p></li>
+        <li><span>03</span><i data-lucide="calendar-check"></i><h3>确认体验</h3><p>约定目标与时间，线上交流或在公共场所见面。</p></li>
+        <li><span>04</span><i data-lucide="circle-check-big"></i><h3>完成互评</h3><p>记录收获与信用，也可以继续预约下一次交换。</p></li>
+      </ol>
+    </section>
+
+    <section class="trust-section" id="trust">
+      <div class="trust-copy">
+        <p class="section-kicker">放心交换</p>
+        <h2>把陌生人的第一次见面，变得更确定</h2>
+        <p>联系方式不会直接公开。双方先确认技能、目标、时间与方式，再决定是否开始。</p>
+        <ul>
+          <li><i data-lucide="badge-check"></i><span><strong>身份与履约记录</strong>认证状态、完成次数和真实评价清晰可见。</span></li>
+          <li><i data-lucide="timer"></i><span><strong>30 分钟短体验</strong>先完成一个小目标，减少试错与爽约成本。</span></li>
+          <li><i data-lucide="map-pin-check"></i><span><strong>线下安全提示</strong>首次见面推荐公共场所，并支持举报与拉黑。</span></li>
+        </ul>
+      </div>
+      <div class="trust-panel">
+        <div class="mini-profile">
+          <div class="avatar avatar-green">林</div>
+          <div><strong>林夏</strong><span>实名认证 · 履约率 96%</span></div>
+          <i data-lucide="shield-check"></i>
+        </div>
+        <div class="goal-box">
+          <small>首次体验目标</small>
+          <strong>用自然光拍出一张清晰的人像</strong>
+          <div><span><i data-lucide="video"></i> 线上</span><span><i data-lucide="clock"></i> 30 分钟</span></div>
+        </div>
+        <div class="confirm-row"><i data-lucide="check"></i><span>双方已确认交换目标和时间</span></div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div>
+        <p>你的技能，比你想象中更有价值。</p>
+        <h2>今天，用一次分享开启一次新学习。</h2>
+      </div>
+      <button class="button button-light" data-open-publish><i data-lucide="plus"></i> 发布我的技能</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">S</span><span>SkillLoop 技能环</span></a>
+    <p>让每一次分享，都成为下一次学习的开始。</p>
+    <span>© 2026 SkillLoop · 产品概念雏形</span>
+  </footer>
+
+  <dialog id="publishDialog" class="modal">
+    <form method="dialog" id="publishForm">
+      <div class="modal-head">
+        <div><p class="section-kicker">创建技能档案</p><h2>你会什么，又想学什么？</h2></div>
+        <button class="icon-button" value="cancel" aria-label="关闭" title="关闭"><i data-lucide="x"></i></button>
+      </div>
+      <label>我能教的<input name="teach" required placeholder="例如：用 Python 自动整理 Excel"></label>
+      <label>我想学的<input name="learn" required placeholder="例如：人像摄影构图"></label>
+      <div class="form-row">
+        <label>交换方式<select name="mode"><option>线上或线下均可</option><option>仅线上</option><option>仅线下</option></select></label>
+        <label>方便时间<select name="time"><option>周末</option><option>工作日晚间</option><option>时间灵活</option></select></label>
+      </div>
+      <label>一句话介绍<textarea name="intro" rows="3" placeholder="说说你能帮助对方完成什么具体目标"></textarea></label>
+      <button class="button button-coral full-button" type="submit">发布并寻找匹配</button>
+      <p class="form-note"><i data-lucide="lock-keyhole"></i> 联系方式仅在双方确认后可见</p>
+    </form>
+  </dialog>
+
+  <dialog id="swapDialog" class="modal small-modal">
+    <form method="dialog" id="swapForm">
+      <div class="modal-head">
+        <div><p class="section-kicker">交换申请</p><h2 id="swapTitle">向 TA 发起交换</h2></div>
+        <button class="icon-button" value="cancel" aria-label="关闭" title="关闭"><i data-lucide="x"></i></button>
+      </div>
+      <div class="selected-skill"><i data-lucide="sparkles"></i><span id="selectedSkill"></span></div>
+      <label>我可以提供<input name="offer" required placeholder="填写你可以交换的技能"></label>
+      <label>我的学习目标<textarea name="goal" required rows="3" placeholder="例如：希望第一次学会相机基础参数"></textarea></label>
+      <button class="button button-coral full-button" type="submit">发送交换申请</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="circle-check"></i><span>操作成功</span>
+  </div>
+</body>
+</html>
